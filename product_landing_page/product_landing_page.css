@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ddd;
+  font-family: Arial, sans-serif;
+}
+
+#header-img {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 3px;
+}
+
+#header {
+  width: 100%;
+  background-color: #ccc;
+  display: flex;
+  align-items: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10px;
+}
+
+#header span {
+  font-family: fantasy;
+  font-size: 1.3rem;
+}
+
+#nav-bar {
+  width: 30%;
+  max-width: 720px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  right: 1.8rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #222;
+  margin: 2px;
+}
+
+main {
+  width: 100%;
+  margin: 80px auto 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  margin: 40px auto 70px;
+}
+
+input {
+  display: block;
+  margin: 1rem auto;
+}
+
+#email {
+  width: 300px;
+  height: 2rem;
+  padding: 10px;
+}
+
+#submit {
+  width: 180px;
+  height: 2rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  background-color: orange;
+}
+
+#submit:hover {
+  background-color: orangered;
+}
+
+#features div {
+  max-width: 850px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto ;
+  justify-content: start;
+  column-gap: 3.1rem;
+  margin: 2.5rem auto;
+}
+
+#features img {
+  width: 5rem;
+  grid-row: 1 / 3;
+}
+
+#features h2, #features p {
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+
+#video {
+  display: block;
+  margin: 70px auto;
+}
+
+#pricing {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(220px, 40%));
+  gap: 15px;
+}
+
+#pricing div {
+  width: 100%;
+  border: 2px solid black;
+  text-align: center;
+  padding: 0px;
+  margin: 15px auto;
+}
+
+#pricing h3 {
+  width: 100%;
+  background-color: #bbb;
+  padding: 10px;
+  margin: 0;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 20px;
+}
+
+.select {
+  padding: 5px 15px;
+  font-size: 1.1rem;
+  background-color: orange;
+  margin-bottom: 15px;
+}
+
+.select:hover {
+  background-color: orangered;
+}
+
+@media screen and (max-width: 720px) {
+  html {
+    font-size: 14px;
+  }
+
+  #pricing {
+    grid-template-columns: 1fr;
+  }
+
+  #pricing div {
+  width: 70%;
+  max-width: 420px;
+  min-width: 200px;
+  }
+
+  #video {
+    width: 448px
+  }    
+}
